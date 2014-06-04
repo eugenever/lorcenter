@@ -1,7 +1,11 @@
 Lorcenter::Application.routes.draw do
   
+  get "static_pages/home"
+  get "static_pages/help"
   get "sitemap.xml" => "home#sitemap", format: :xml, as: :sitemap
   get "robots.txt" => "home#robots", format: :text, as: :robots
+
+  root 'static_pages#home'
 
   mount Ckeditor::Engine => '/ckeditor'
   
