@@ -201,7 +201,7 @@ hr {
     line-height: 1.4285em;
   }
   h3 {
-    font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    font: normal 1.35em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
@@ -241,9 +241,10 @@ hr {
   background-color: #ffffff; //rgba(0, 0, 0, 0.8);
   padding-top: 10px;
   padding-bottom: 10px;
-  h2 {
+  margin-bottom: 20px;
+  h2, h3 {
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 
