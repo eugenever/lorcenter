@@ -1,0 +1,136 @@
+<!-- fixed navigation bar -->
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation" id="nbheader">
+  
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ЛОР КЛИНИКА</a>
+    </div>
+    <div class="collapse navbar-collapse" id="b-menu-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">О клинике<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li> <%= link_to "Наша миссия", '#' %></li>
+            <li><%= link_to "История", '#' %></li>
+            <li><%= link_to "Новости", '#' %></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">Видео клиники</a></li>
+            <li><a href="#">Патенты, награды</a></li>
+            <li><a href="#">Клуб офтальмологов</a></li>
+            <li><a href="#">Благотворительность</a></li>
+            <li><a href="#">Корпоративные издания</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Публикации</a></li>
+            <li><a href="#">Работа в Три-З</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Врачи<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Врачи клиники</a></li>
+            <li><a href="#">Врачи филиалов</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Медицинские услуги<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Диагностика</a></li>
+            <li><a href="#">Коррекция близорукости, астигматизма</a></li>
+            <li><a href="#">Хирургия катаракты</a></li>
+            <li><a href="#">Лечение глаукомы</a></li>
+            <li><a href="#">Лечение кератоконуса</a></li>
+            <li><a href="#">Детский центр "ТриЗор"</a></li>
+            <li><a href="#">Контактная коррекция, ОПТИКА</a></li>
+            <li><a href="#">Аптека</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пациентам<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Записаться на прием со скидкой</a></li>
+            <li><a href="#">Услуги и цены</a></li>
+            <li><a href="#">График онлайн консультаций</a></li>
+            <li><a href="#">График выездных приемов врачей</a></li>
+            <li><a href="#">Как вести себя ДО и ПОСЛЕ операции</a></li>
+            <li><a href="#">Специальные предложения и акции</a></li>
+            <li><a href="#">Дополнительные услуги</a></li>
+            <li><a href="#">Статьи врачей</a></li>
+            <li><a href="#">Всё о глазах</a></li>
+            <li><a href="#">Программа поощрения</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Вопрос-Ответ</a></li>
+        <li><a href="#">Отзывы</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Контакты<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Центральная клиника г. Краснодар</a></li>
+            <li><a href="#">Клиника г. Пермь</a></li>
+            <li><a href="#">Клиника г. Ессентуки</a></li>
+            <li><a href="#">Филиалы и представительства</a></li>
+            <li><a href="#">Аптеки и салоны оптики "Три-З"</a></li>
+          </ul>
+        </li>        
+
+      </ul>
+    </div> <!-- /.nav-collapse -->
+  </div> <!-- /.container -->
+  
+</div> <!-- /.navbar -->
+<!-- выпадающий список должен помещаться в рамках экрана -->
+<script type="text/javascript">
+  $('.dropdown-toggle').on("click", function() {
+    var dropdownList = $('.dropdown-menu'),
+    dropdownOffset = $(this).offset(),
+    offsetLeft = dropdownOffset.left,
+    dropdownWidth = dropdownList.width(),
+    docWidth = $(window).width(),
+
+    subDropdown = dropdownList.eq(1),
+    subDropdownWidth = subDropdown.width(),
+
+    isDropdownVisible = (offsetLeft + dropdownWidth <= docWidth),
+    isSubDropdownVisible = (offsetLeft + dropdownWidth + subDropdownWidth <= docWidth);
+
+    if (!isDropdownVisible || !isSubDropdownVisible) {
+          dropdownList.css("right", "0").css("left", "auto");
+    } else {
+          dropdownList.css("right", "auto").css("left", "0");
+    }
+  });
+
+  $('.dropdown-toggle').hover(function() {
+    var dropdownList = $('.dropdown-menu'),
+    dropdownOffset = $(this).offset(),
+    offsetLeft = dropdownOffset.left,
+    dropdownWidth = dropdownList.width(),
+    docWidth = $(window).width(),
+
+    subDropdown = dropdownList.eq(1),
+    subDropdownWidth = subDropdown.width(),
+
+    isDropdownVisible = (offsetLeft + dropdownWidth <= docWidth),
+    isSubDropdownVisible = (offsetLeft + dropdownWidth + subDropdownWidth <= docWidth);
+
+    if (!isDropdownVisible || !isSubDropdownVisible) {
+          dropdownList.css("right", "0").css("left", "auto");
+    } else {
+          dropdownList.css("right", "auto").css("left", "0");
+    }
+  }, function() {
+    // обработчик отведения мыши
+  });
+
+</script>
