@@ -14,31 +14,8 @@
     <div class="collapse navbar-collapse" id="b-menu-1">
       <ul class="nav navbar-nav navbar-right">
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">О клинике<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li> <%= link_to "Наша миссия", '#' %></li>
-            <li><%= link_to "История", '#' %></li>
-            <li><%= link_to "Новости", '#' %></li>
-            <li><a href="#">Оборудование</a></li>
-            <li><a href="#">Видео клиники</a></li>
-            <li><a href="#">Патенты, награды</a></li>
-            <li><a href="#">Клуб офтальмологов</a></li>
-            <li><a href="#">Благотворительность</a></li>
-            <li><a href="#">Корпоративные издания</a></li>
-            <li><a href="#">Фотогалерея</a></li>
-            <li><a href="#">Публикации</a></li>
-            <li><a href="#">Работа в Три-З</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Врачи<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Врачи клиники</a></li>
-            <li><a href="#">Врачи филиалов</a></li>
-          </ul>
-        </li>
+        <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "О Клинике", about_path %></li>
+        <li class="<%= 'active' if current_page?(doctor_path) %>"><%= link_to "Врачи", doctor_path %></li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Медицинские услуги<b class="caret"></b></a>
@@ -71,7 +48,7 @@
         </li>
 
         <li><a href="#">Вопрос-Ответ</a></li>
-        <li><a href="#">Контакты</a></li>              
+        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Контакты", contact_path %></li>              
 
       </ul>
     </div> <!-- /.nav-collapse -->

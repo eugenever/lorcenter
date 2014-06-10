@@ -118,6 +118,10 @@ footer {
   //margin-right: 5%;
 }
 
+#content {
+  margin-top: 30px;
+}
+
 h1 {
     font: normal 1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
     margin: 0 0 0px;
@@ -134,7 +138,7 @@ h2 {
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px 0;
+    padding: 5px 0;
     font-weight: normal;
     text-align: center;
     //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
@@ -145,7 +149,18 @@ h3 {
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px 0;
+    padding: 4px 0;
+    font-weight: normal;
+    text-align: center;
+    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    line-height: 1.4285em;
+}
+h4 {
+    font: normal 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    margin: 0 0 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px 0;
     font-weight: normal;
     text-align: center;
     //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
@@ -178,6 +193,7 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 0px;
+  color: #444444;
   h1 {
     font: normal 1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
     margin: 0 0 0px;
@@ -194,7 +210,7 @@ hr {
     //margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px 0;
+    padding: 4px 0;
     font-weight: normal;
     text-align: center;
     //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
@@ -205,7 +221,7 @@ hr {
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px 0;
+    padding: 3px 0;
     font-weight: normal;
     text-align: center;
     //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
@@ -238,13 +254,28 @@ hr {
 
 .intro-marketing {
   width: 100%;
-  background-color: #ffffff; //rgba(0, 0, 0, 0.8);
+  background-color: #b3d4fc;//#aca7a4;//#B6D7E6;//#8aadd1;//#ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
   h2, h3 {
     text-align: left;
     margin-bottom: 7px;
+  }
+}
+
+#contact {
+  h3 {
+    padding: 3px 0;
+  }
+}
+
+.btn-clear {
+  color: #444444;
+  background-color: transparent;
+  border: 3px solid #444444;
+  &:hover {
+    background-color: #fff;
   }
 }
 
@@ -1181,6 +1212,10 @@ h1 small {
   margin-top: 15px;
 }
 
+.imgp {
+  text-align: center;
+}
+
 //второй вариант галереи карусели
 #owl-example .item{
   //background: #3fbf79;
@@ -1401,18 +1436,26 @@ h1 small {
     padding: 0;
     li {
       margin-bottom: 13px;
-      text-align: justify;
+      text-align: left;
     }
 }
 
-.thumbnail {
-  border-radius: 10px;
-  //background-image: asset_url("pazl.png");
-  //background-repeat: repeat;
-  .caption {
-    position:relative;
-    background-color: #404040;
-    //color:#ccc9c9;
+.doctors {
+  .thumbnail {
+    //background-color: inherit;
+  }
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.doctor {
+  margin-bottom: 10px;
+  margin-top: 10px;  
+}
+.docontent {
+  h4 {
+    text-align: left;
+    line-height: 1.42em;
   }
 }
 
@@ -1429,9 +1472,13 @@ h1 small {
 .first-ul li {
   background: asset_url("tick.png") no-repeat left 8px;
   border-bottom: 1px solid #eee;
-  font-size: 14px;
+  font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
   list-style: none;
   padding: 5px 0 5px 40px;
+}
+
+.first-ul {
+  padding-left: 5px; 
 }
 
 //второй вариант галереи карусели

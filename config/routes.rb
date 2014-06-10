@@ -1,13 +1,16 @@
-Lorcenter::Application.routes.draw do
+Lorcenter::Application.routes.draw do  
   
-  get "static_pages/home"
-  get "static_pages/help"
+  mount Ckeditor::Engine => '/ckeditor'
+
   get "sitemap.xml" => "home#sitemap", format: :xml, as: :sitemap
   get "robots.txt" => "home#robots", format: :text, as: :robots
 
-  root 'static_pages#home'
+  root 'static_pages#home' 
 
-  mount Ckeditor::Engine => '/ckeditor'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/about', to: 'static_pages#about', via: 'get'
+  match '/doctor', to: 'static_pages#doctor', via: 'get'
+  match '/doctor/semenov', to: 'static_pages#semenov', via: 'get'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
