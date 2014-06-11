@@ -62,7 +62,12 @@ $(document).ready(function() {
 
 $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
 
-
-
-
-
+$(function(){
+  $("#accordion dt.active").next("#accordion dd").css({display:'block'});
+  $("#accordion dt").click(function() {
+    $(this).next("#accordion dd").slideToggle("slow").siblings("#accordion dd:visible").slideUp("slow");
+    $(this).toggleClass("active");
+    $(this).siblings("#accordion dt").removeClass("active");
+    return false 
+  });
+});

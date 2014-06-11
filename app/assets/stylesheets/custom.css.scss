@@ -188,6 +188,8 @@ hr {
 .jumbotron {
   //background-color: #3483a5; //rgba(0, 0, 0, 0.8);
   //background-image: linear-gradient(to bottom,#328bb1,#4baad3);
+  background-image: asset_url("blue.png");
+  background-repeat: repeat;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -252,9 +254,27 @@ hr {
   }
 }
 
+.border1 {
+  padding: 0px 0px 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #7790b6;
+  box-shadow: 0px 1px #e7effb;
+  -moz-box-shadow: 0px 1px #e7effb;
+  -webkit-box-shadow: 0px 1px #e7effb;
+  max-width: 90%;
+  position:relative;
+  left:5%;
+}
+
+.clear {
+  clear: both;
+}
+
 .intro-marketing {
   width: 100%;
-  background-color: #b3d4fc;//#aca7a4;//#B6D7E6;//#8aadd1;//#ffffff;
+  //background-color: #b3d4fc;//#aca7a4;//#B6D7E6;//#8aadd1;//#ffffff;
+  background-image: asset_url("blue.png");
+  background-repeat: repeat;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -275,38 +295,86 @@ hr {
   background-color: transparent;
   border: 3px solid #444444;
   &:hover {
-    background-color: #fff;
+    background-color: #7EC0EE;
   }
 }
+
+span {
+  font-size: 1.0em;
+  color: #4e5c6e;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+  //margin: 0 0 25px;
+  //display: block;
+}
+
+/* ACCORDION
+========================================================================= */
+dl#accordion{
+  list-style-type:none;
+  padding:0 0 0 0;
+  height:auto !important;
+  background: asset_url("line-100.png") repeat-x 0 100%;
+}
+dl#accordion .border-none {background:none;}
+dl#accordion dt {
+  background:none;
+  padding:0;
+  cursor: pointer;
+  display:block;
+  text-transform:uppercase;
+  padding: 16px 38px 17px 0;
+  background: asset_url("line-100.png") repeat-x;
+}
+dl#accordion dt strong a {
+  text-decoration:none;
+  display:block;
+  padding:0;
+}
+dl#accordion dt:hover strong a {
+  color:#577887;
+}
+dl#accordion dt strong {
+  background: asset_url("accordio.png") no-repeat 0 0px;
+  padding-left:40px;
+  padding-bottom:6px;
+  margin-bottom:-6px;
+}
+dl#accordion dt.active strong {
+  background: asset_url("accordip.png") no-repeat 0 0px;
+  //color:#ff6912;
+}
+dl#accordion dd {
+  display:none;
+  padding: 0 5px 0 5px;
+}
+dl#accordion dd .indent{
+  margin-top:-2px;
+  padding-bottom:13px;
+  font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+strong.s{ /*color:#ff6600;*/
+  color:#3e3545;
+  font: bold 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  letter-spacing:0.5pt;
+  line-height: 1.93em;
+}
+
+#tprice {
+  th, .tdcenter {
+    text-align: center;
+  }
+}
+
+.ident-bot-34 {margin-bottom: 25px;}
 
 .container .curled {
   background: white;
   padding-top: 20px;
   padding-bottom: 5px;
   padding-left: 20px;
-  padding-right: 20px;
-  h1 {
-    font: normal 1.7em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-    margin: 0 0 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 0;
-    font-weight: normal;
-    text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
-    line-height: 1.4285em;
-  }
-  .stylep {
-    font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-    margin: 0 0 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 4px 0 4px;
-    font-weight: normal;
-    text-align: justify;
-    text-indent: 2em;
-    line-height: 1.4285em;
-  }
+  padding-right: 20px;  
 }
 
 .container .raised {
@@ -341,18 +409,6 @@ hr {
   }
 }
 
-.stylep {
-  font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-  margin: 0 0 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 4px 0 4px;
-  font-weight: normal;
-  text-align: justify;
-  text-indent: 2em;
-  line-height: 1.4285em;
-}
-
 .stylepnews {
   font: normal 0.95em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
   margin: 0 0 0px;  
@@ -378,18 +434,7 @@ hr {
     text-align: center;
     //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
     line-height: 1.4285em;
-  }
-  .stylep {
-    font: normal 1.0em Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-    margin: 0 0 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 4px 0 4px;
-    font-weight: normal;
-    text-align: justify;
-    text-indent: 2em;
-    line-height: 1.4285em;
-  }
+  }  
 }
 
 .curved-hz-2 {
@@ -485,34 +530,6 @@ hr {
         -ms-transform:rotate(3deg);
          -o-transform:rotate(3deg);
             transform:rotate(3deg);
-}
-
-.mainheaderh1 {
-    font: normal 1.1em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-    margin: 0 0 0 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    padding: 0 0;
-    font-weight: normal;
-    text-align: center;
-    //text-shadow: 0 0 0 #ccc; /*--Не поддерживается IE--*/
-    line-height: 1.4285em;
-    //color: white;
-}
-
-.mainheaderp {
-    
-    margin: 0 0 0 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    padding: 0 0;
-    font-weight: normal;
-    text-align: center;
-    //text-shadow: 0 0 0 #ccc; /*--Не поддерживается IE--*/
-    line-height: 1.4285em;
-    //color: white;
 }
 
 #social {
@@ -670,7 +687,7 @@ html {
 }
 
 body {
-  background-image: asset_url("baika.png");
+  background-image: asset_url("blue.png");
   background-repeat: repeat;
   margin-top: 0px;
 }
@@ -748,7 +765,18 @@ footer {
 }
 
 #w2b-StoTop {
-  //background: asset_url("buttonup.png")
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin-bottom: 7px;
+  margin-left: 11px;
+  background: asset_url("totop2.png") no-repeat center center #627d97;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
 }
 
 /* miscellaneous */
@@ -926,32 +954,6 @@ HR {
   margin: 0 -100% 0 0;
 }
 
-//стилизация заголовка
-.styleh1 {
-  font: normal 1.7em Georgia, "Times New Roman", Times, serif;
-  margin: 0 0 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px 0;
-  font-weight: normal;
-  text-align: center;
-  text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
-}
-
-h1 span {
-  color: #cc0000;
-  font-weight: bold;
-}
-
-h1 small {
-  font-size: 0.35em;
-  text-transform: uppercase;
-  color: #999;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: none;
-  display: block; /*--Выделяем для тэга small отдельную линию--*/
-}
-
 .well {
   margin-bottom: 5px;
   //background-image: asset_url("hbtkan.png");
@@ -970,27 +972,6 @@ h1 small {
   //width: 100%;
   //padding: 19px;
   border-radius: 5px;
-}
-
-.wellj {
-  margin-bottom: 5px;
-  //background-image: asset_url("hbtkan.png");
-  //background-repeat: repeat;
-  background-color: rgba(0, 0, 0, 0.8);//#428bca;//#3483a5;//rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  //overflow: hidden;
-  //-moz-overflow: hidden;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  //border-top: 1px solid #CCC;
-  //margin-bottom: 10px;
-  //width: 100%;
-  //padding: 19px;
-  border-radius: 5px;
-  color: white;
 }
 
 //врезки в текст
@@ -1036,29 +1017,6 @@ h1 small {
   margin-left: 0px;
   padding: 5px
 }
-
-
-
-.page-header {
-  background-color: whiteSmoke;
-  background-image: -moz-linear-gradient(center top,white 26%,whiteSmoke 76%);
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.26,white),color-stop(0.76,whiteSmoke));
-  background-image: -ms-linear-gradient(center top,white 26%,whiteSmoke 76%);
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  border: 1px solid #CCC;
-  padding-bottom: 0;
-  border-bottom: 1px solid #CCC;
-  margin-bottom: 0px;
-  //float: left;
-  //width: 100%;
-  //padding-left: 19px;
-  //padding-right: 19px;
-}
-
-
-
-
 
 //таблицы
 .features-table

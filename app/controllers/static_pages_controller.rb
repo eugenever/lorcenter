@@ -15,4 +15,7 @@ class StaticPagesController < ApplicationController
   def semenov    
   end
 
+  def price    
+  end
+
 end
