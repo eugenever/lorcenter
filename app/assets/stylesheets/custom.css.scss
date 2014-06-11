@@ -192,8 +192,8 @@ hr {
   background-repeat: repeat;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin-bottom: 0px;
   color: #444444;
   h1 {
@@ -690,6 +690,7 @@ body {
   background-image: asset_url("blue.png");
   background-repeat: repeat;
   margin-top: 0px;
+  padding-top: 50px;
 }
 
 section {
@@ -738,9 +739,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+//необходимо для прижатия футера
+html, body {
+  height: 97.7%; //при 100 страница немного больше размера экрана
+}
+
+#wrapper {
+  position: relative;
+  min-height: 100%;
+}
+//конец настроек для прижатия футера
+
 /* footer */
 
 footer {
+  position: relative; //необходимо для прижатия футера
+  zoom:1; //необходимо для прижатия футера
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
@@ -762,6 +776,7 @@ footer {
       margin-left: 10px;
     }
   }
+
 }
 
 #w2b-StoTop {
