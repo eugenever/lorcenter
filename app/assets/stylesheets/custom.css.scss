@@ -22,7 +22,7 @@ a.menu:after, .dropdown-toggle:after {
 
 .navbar { 
   //background:#eee;
-  //border-bottom:solid 1px #ccc;
+  //border-bottom:solid 1px #ccc;  
   .nav {
    margin-left: 20px;
    margin-right: 20px;
@@ -30,15 +30,15 @@ a.menu:after, .dropdown-toggle:after {
     a {
      //padding:5px;
      //margin:5px 5px 0 0;
-     border-radius: 5px;
+     //border-radius: 5px;
+     //color: #adadad;
      &:hover {
-      background:#4682B4;
+      background:#4e5c6e;
       color: white;
      };
     }
    }
-  }  
- 
+  }   
 }
 
 .navbar-text.navbar-right {
@@ -52,8 +52,16 @@ a.menu:after, .dropdown-toggle:after {
   margin: 5px;
 }
 
+.navbar-inverse {
+  //background-color: #36648B;
+  border-color: #090909;
+}
+
+.dropdown-menu {
+  //background-color: #36648B;
+}
+
 footer {
-  //background-color: rgba(0, 0, 0, 0.8);
   background: asset_url("bg-dark-4823.png");
   background-repeat: repeat;
 }
@@ -197,26 +205,27 @@ hr {
   margin-bottom: 0px;
   color: #444444;
   h1 {
-    font: normal 1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
+    font: normal 1.9em "Trebuchet MS", Arial, Helvetica, sans-serif;
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px 0;
     font-weight: normal;
-    text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    text-align: center;    
     line-height: 1.4285em;
+    color: #4e5c6e;
+    text-shadow: 1px 1px 1px #FFFFFF;
   }
   h2 {
     font: normal 1.5em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-    //margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px 0;
     font-weight: normal;
-    text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    text-align: center;    
     line-height: 1.4285em;
+    color: #4e5c6e;    
+    font-style: italic; 
   }
   h3 {
     font: normal 1.35em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -225,9 +234,10 @@ hr {
     margin-right: 10px;
     padding: 3px 0;
     font-weight: normal;
-    text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
+    text-align: center;    
     line-height: 1.4285em;
+    color: #4e5c6e;    
+    font-style: italic; 
   }
   p {
     font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -237,10 +247,8 @@ hr {
     padding: 4px 0 4px;
     font-weight: normal;
     text-align: justify;
-    //text-indent: 2em;
-    //text-shadow: 1px 1px 1px #ccc;
+    //color: #557DB5;
     line-height: 1.4285em;
-    //color: #D3D3D3;//#999999;//#fff;
   }
   hr {
     margin-top: 5px;
@@ -250,7 +258,8 @@ hr {
   .mhul {
     list-style-type: none;
     font: normal 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;
-    //text-align: center;
+    color: #4e5c6e;    
+    font-style: italic;
   }
 }
 
@@ -271,23 +280,36 @@ hr {
 }
 
 .intro-marketing {
-  width: 100%;
-  //background-color: #b3d4fc;//#aca7a4;//#B6D7E6;//#8aadd1;//#ffffff;
+  width: 100%;  
   background-image: asset_url("blue.png");
-  background-repeat: repeat;
-  padding-top: 10px;
+  background-repeat: repeat;  
   padding-bottom: 10px;
   margin-bottom: 20px;
   h2, h3 {
     text-align: left;
     margin-bottom: 7px;
+    color: #557DB5;
+    //text-shadow: 1px 1px 1px #FFFFFF;
   }
+}
+
+h2.cental {
+  text-align: center;
 }
 
 #contact {
   h3 {
     padding: 3px 0;
+    color: #4e5c6e;
+    font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+    font-weight: bold;
+    font-style: italic;
   }
+  h4 {
+    color: #4e5c6e;
+    font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+    font-style: italic;
+  }  
 }
 
 .btn-clear {
@@ -304,8 +326,6 @@ span {
   color: #4e5c6e;
   font-style: italic;
   font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
-  //margin: 0 0 25px;
-  //display: block;
 }
 
 /* ACCORDION
@@ -362,12 +382,34 @@ strong.s{ /*color:#ff6600;*/
 }
 
 #tprice {
+  th {
+    border-bottom: 2px solid #7790b6;
+  }
   th, .tdcenter {
     text-align: center;
+  }
+  .tdspan {
+    font-size: 1.0em;
+    color: #4e5c6e;
+    font-style: italic;
+    font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+  }
+  .tdspanp {
+    font-size: 1.0em;
+    color: #557db5;
+    font-style: italic;
+    font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
+  }
+  td {
+    border-bottom: 1px solid #7790b6;
   }
 }
 
 .ident-bot-34 {margin-bottom: 25px;}
+
+.imgd {
+  border: 5px solid #d9e4eb;
+}
 
 .container .curled {
   background: white;
@@ -969,24 +1011,18 @@ HR {
   margin: 0 -100% 0 0;
 }
 
-.well {
-  margin-bottom: 5px;
-  //background-image: asset_url("hbtkan.png");
-  //background-repeat: repeat;
-  //background-color: #fff;
-  -moz-box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  box-shadow: 0 0 6px rgba(0,0,0,0.06);
-  //overflow: hidden;
-  //-moz-overflow: hidden;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  //border-top: 1px solid #CCC;
-  //margin-bottom: 10px;
-  //width: 100%;
-  //padding: 19px;
+.wellc {
+  //margin-bottom: 5px;
+  background-image: asset_url("blue_white.png");
+  background-repeat: repeat;  
+  border: 1px solid #7790b6;
+  box-shadow: 0 0 1px 1px #e7effb;
+  -moz-box-shadow: 0 0 1px 1px #e7effb;
+  -webkit-box-shadow: 0 0 1px 1px #e7effb;
   border-radius: 5px;
+  min-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;     
 }
 
 //врезки в текст
