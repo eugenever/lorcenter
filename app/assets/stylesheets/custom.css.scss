@@ -127,7 +127,7 @@ footer {
 }
 
 #content {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -187,19 +187,13 @@ p {
     //font-style: italic;
 }
 
-hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 95%;
-}
-
 .jumbotron {
   //background-color: #3483a5; //rgba(0, 0, 0, 0.8);
   //background-image: linear-gradient(to bottom,#328bb1,#4baad3);
   background-image: asset_url("blue.png");
   background-repeat: repeat;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 0px;
@@ -252,11 +246,6 @@ hr {
     //color: #557DB5;
     line-height: 1.4285em;
   }
-  hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 95%;
-  }
   .mhul {
     list-style-type: none;
     font: normal 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -283,16 +272,42 @@ hr {
 
 .intro-marketing {
   width: 100%;  
-  background-image: asset_url("blue.png");
-  background-repeat: repeat;  
+  background-image: asset_url("blue_white.png");
+  background-repeat: repeat;
+  padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 20px;
   h2, h3 {
     text-align: left;
     margin-bottom: 7px;
     color: #557DB5;
-    //text-shadow: 1px 1px 1px #FFFFFF;
   }
+}
+
+.intro-otdelenie {
+  width: 100%;  
+  background-image: asset_url("blue.png");
+  background-repeat: repeat;  
+  padding-top: 10px;
+  h2, h3 {
+    text-align: center;
+    margin-bottom: 7px;
+    color: #557DB5;
+  }
+  li a {
+    border-bottom: 1px dotted;
+    color: #4e5c6e;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#div_border_bottom {
+  // padding-bottom: 10px;
+  // border-bottom: 1px solid #7790b6;
+  // box-shadow: 0px 1px #e7effb;
+  // -moz-box-shadow: 0px 1px #e7effb;
+  // -webkit-box-shadow: 0px 1px #e7effb;
 }
 
 h2.cental {
@@ -994,9 +1009,14 @@ ul.secondary-menu li ul.sub-menu li:hover ul {
 
 //стильный разделитель
 HR {
-  padding-bottom: 1px;
-  background-color: #9b9b9b;
-  border-bottom:1px solid #F4F4F4;
+  border-bottom: 1px solid #7790b6;
+  border-top: inherit;
+  box-shadow: 0px 1px #e7effb;
+  -moz-box-shadow: 0px 1px #e7effb;
+  -webkit-box-shadow: 0px 1px #e7effb;
+  width: 90%;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 //текст поверх линии
@@ -1038,6 +1058,14 @@ HR {
 
 .divbase {
   margin-bottom: 25px;
+}
+
+.divbase10 {
+  margin-bottom: 10px;
+}
+
+.divbase15 {
+  margin-bottom: 15px;
 }
 
 .italicp {
@@ -1481,6 +1509,16 @@ HR {
     list-style-type: none;
     font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 0;
+    li {
+      margin-bottom: 13px;
+      text-align: left;
+    }
+}
+
+.mhul-ot {
+    list-style-type: none;
+    font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-left: 30px;
     li {
       margin-bottom: 13px;
       text-align: left;
