@@ -37,7 +37,7 @@ function resize() {
   var foot = document.getElementById("footer1");
   var footHeight = foot.offsetHeight;
   foot.style.marginTop = -footHeight + "px";
-  document.getElementById("content").style.paddingBottom = footHeight + 30 + "px";
+  document.getElementById("content").style.paddingBottom = footHeight + "px";
 }
 
 window.onload = resize;

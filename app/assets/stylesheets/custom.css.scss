@@ -138,7 +138,6 @@ h1 {
     padding: 10px 0;
     font-weight: normal;
     text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
     line-height: 1.4285em;
 }
 h2 {
@@ -149,8 +148,9 @@ h2 {
     padding: 5px 0;
     font-weight: normal;
     text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
     line-height: 1.4285em;
+    color: #4e5c6e;    
+    font-style: italic;
 }
 h3 {
     font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -160,8 +160,9 @@ h3 {
     padding: 4px 0;
     font-weight: normal;
     text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
     line-height: 1.4285em;
+    color: #4e5c6e;    
+    font-style: italic;
 }
 h4 {
     font: normal 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -171,22 +172,21 @@ h4 {
     padding: 4px 0;
     font-weight: normal;
     text-align: center;
-    //text-shadow: 1px 1px 1px #ccc; /*--Не поддерживается IE--*/
     line-height: 1.4285em;
+    color: #4e5c6e;    
+    font-style: italic;
 }
 p {
     font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
-    //margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    //padding: 4px 0 4px;
     font-weight: normal;
-    text-align: justify;
-    //text-indent: 2em;
-    //text-shadow: 1px 1px 1px #ccc;
+    text-align: justify;    
     line-height: 1.4285em;
-    //color: #D3D3D3;//#999999;//#fff;
+    //color: #4e5c6e;    
+    //font-style: italic;
 }
+
 hr {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -309,7 +309,8 @@ h2.cental {
     color: #4e5c6e;
     font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
     font-style: italic;
-  }  
+  }
+  margin-bottom: 25px; 
 }
 
 .btn-clear {
@@ -319,6 +320,10 @@ h2.cental {
   &:hover {
     background-color: #7EC0EE;
   }
+  //text-transform: uppercase;
+  color: #4e5c6e;
+  //font-style: italic;
+  //font-weight: bold;
 }
 
 span {
@@ -334,9 +339,11 @@ dl#accordion{
   list-style-type:none;
   padding:0 0 0 0;
   height:auto !important;
-  background: asset_url("line-100.png") repeat-x 0 100%;
+  //background: asset_url("line-100.png") repeat-x 0 100%;
 }
-dl#accordion .border-none {background:none;}
+dl#accordion .border-none {
+  background:none;
+}
 dl#accordion dt {
   background:none;
   padding:0;
@@ -345,6 +352,10 @@ dl#accordion dt {
   text-transform:uppercase;
   padding: 16px 38px 17px 0;
   background: asset_url("line-100.png") repeat-x;
+  // border-bottom: 1px solid #7790b6;
+  // box-shadow: 0px 1px #e7effb;
+  // -moz-box-shadow: 0px 1px #e7effb;
+  // -webkit-box-shadow: 0px 1px #e7effb;
 }
 dl#accordion dt strong a {
   text-decoration:none;
@@ -783,7 +794,7 @@ h1, h2, h3, h4, h5, h6 {
 
 //необходимо для прижатия футера
 html, body {
-  height: 97.7%; //при 100 страница немного больше размера экрана
+  height: 100%; //при 100 страница немного больше размера экрана
 }
 
 #wrapper {
@@ -1011,18 +1022,28 @@ HR {
   margin: 0 -100% 0 0;
 }
 
-.wellc {
+.div_bw {
   //margin-bottom: 5px;
   background-image: asset_url("blue_white.png");
-  background-repeat: repeat;  
-  border: 1px solid #7790b6;
-  box-shadow: 0 0 1px 1px #e7effb;
-  -moz-box-shadow: 0 0 1px 1px #e7effb;
-  -webkit-box-shadow: 0 0 1px 1px #e7effb;
-  border-radius: 5px;
-  min-height: 20px;
-  padding: 10px;
-  margin-bottom: 20px;     
+  background-repeat: repeat;
+  padding: 25px;
+}
+
+.divbase {
+  margin-bottom: 25px;
+}
+
+.italicp {
+  color: #4e5c6e;    
+  font-style: italic;
+}
+
+.wellbase {
+  margin-bottom: 25px;
+  p {
+    color: #4e5c6e;    
+    font-style: italic;
+  }
 }
 
 //врезки в текст
@@ -1484,10 +1505,29 @@ HR {
   font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
   list-style: none;
   padding: 5px 0 5px 40px;
+  color: #4e5c6e;    
+  font-style: italic;
 }
 
 .first-ul {
   padding-left: 5px; 
+}
+
+.itemlist li {
+  background: asset_url("item_list1.png") no-repeat 0px 50%;
+  border-bottom: 1px solid #7790b6;
+  box-shadow: 0px 1px #e7effb;
+  -moz-box-shadow: 0px 1px #e7effb;
+  -webkit-box-shadow: 0px 1px #e7effb;
+  padding: 2px 0 0 25px !important;
+  list-style-type: none;
+  color: #4e5c6e;    
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.itemlist {
+  padding-left: 12px;
 }
 
 //второй вариант галереи карусели
