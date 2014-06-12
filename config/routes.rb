@@ -11,6 +11,7 @@ Lorcenter::Application.routes.draw do
   match '/about', to: 'static_pages#about', via: 'get'
   match '/doctor', to: 'static_pages#doctor', via: 'get'
   match '/doctor/semenov', to: 'static_pages#semenov', via: 'get'
+  match '/doctor/gorbonosov', to: 'static_pages#gorbonosov', via: 'get'
   match '/price', to: 'static_pages#price', via: 'get'
   
 

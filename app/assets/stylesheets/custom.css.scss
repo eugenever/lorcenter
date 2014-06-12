@@ -232,12 +232,14 @@ hr {
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 7px;
     padding: 3px 0;
     font-weight: normal;
     text-align: center;    
     line-height: 1.4285em;
     color: #4e5c6e;    
-    font-style: italic; 
+    font-style: italic;
+    text-decoration: underline;
   }
   p {
     font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -304,6 +306,7 @@ h2.cental {
     font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
     font-weight: bold;
     font-style: italic;
+    text-decoration: underline;
   }
   h4 {
     color: #4e5c6e;
@@ -351,11 +354,11 @@ dl#accordion dt {
   display:block;
   text-transform:uppercase;
   padding: 16px 38px 17px 0;
-  background: asset_url("line-100.png") repeat-x;
-  // border-bottom: 1px solid #7790b6;
-  // box-shadow: 0px 1px #e7effb;
-  // -moz-box-shadow: 0px 1px #e7effb;
-  // -webkit-box-shadow: 0px 1px #e7effb;
+  //background: asset_url("line-100.png") repeat-x;
+  border-bottom: 1px solid #7790b6;
+  box-shadow: 0px 1px #e7effb;
+  -moz-box-shadow: 0px 1px #e7effb;
+  -webkit-box-shadow: 0px 1px #e7effb;
 }
 dl#accordion dt strong a {
   text-decoration:none;
@@ -381,8 +384,13 @@ dl#accordion dd {
 }
 dl#accordion dd .indent{
   margin-top:-2px;
-  padding-bottom:13px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #7790b6;
+  box-shadow: 0px 1px #e7effb;
+  -moz-box-shadow: 0px 1px #e7effb;
+  -webkit-box-shadow: 0px 1px #e7effb;
 }
 
 strong.s{ /*color:#ff6600;*/
@@ -1023,7 +1031,6 @@ HR {
 }
 
 .div_bw {
-  //margin-bottom: 5px;
   background-image: asset_url("blue_white.png");
   background-repeat: repeat;
   padding: 25px;
@@ -1036,6 +1043,16 @@ HR {
 .italicp {
   color: #4e5c6e;    
   font-style: italic;
+}
+
+.italicpb {
+  font-style: italic;
+}
+
+.italicpbl {
+  color: #4e5c6e;    
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .wellbase {
@@ -1528,6 +1545,10 @@ HR {
 
 .itemlist {
   padding-left: 12px;
+  a {
+    color: #557DB5;
+    //border-bottom: 1px dotted;
+  }
 }
 
 //второй вариант галереи карусели
