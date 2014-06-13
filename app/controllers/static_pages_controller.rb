@@ -18,4 +18,7 @@ class StaticPagesController < ApplicationController
   def price    
   end
 
+  def rinoplastic    
+  end
+
 end

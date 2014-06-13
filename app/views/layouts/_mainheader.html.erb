@@ -9,8 +9,8 @@
         <h2><%= image_tag "plastic_surg.png", style: "max-width:43px" %> Отделение пластической хирургии</h2>
       </div> 
       <div class="col-md-6 col-sm-6 col-xs-12">        
-        <h2 style="margin-bottom:8px;margin-top:8px;"><%= image_tag "phone.png" %> (861) 268-87-00, 268-78-73</h2>
-        <h2><%= image_tag "marker_boll.png", size: "40x40" %>г. Краснодар, ул. Захарова, 59</h2>
+        <h2 style="margin-bottom:8px;margin-top:8px;"><%= image_tag "phone.png", style: "max-width:25px" %> <span>8 (861)</span> 268-87-00, 268-78-73</h2>
+        <h2><%= image_tag "marker_boll.png", style: "max-width:30px" %>г. Краснодар, ул. Захарова, 59</h2>
       </div>
     </div>    
 
@@ -80,8 +80,10 @@
     <div class="row" id="div_border_bottom">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <h2 class="cental">Приоритетные направления работы клиники</h2>
-      </div>      
+      </div> 
+
       <div class="col-md-6 col-sm-6 col-xs-12">        
+              
           <h3>Отделение оториноларингологии</h3>
           <ul class="mhul-ot">
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Аденоиды", "#" %></span></li>
@@ -98,8 +100,10 @@
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Слух: Подбор слуховых аппаратов", "#" %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Эндоскопическая хирургия носа и околоносовых пазух", "#" %></span></li>
           </ul>
+        
       </div>       
-      <div class="col-md-6 col-sm-6 col-xs-12">        
+      <div class="col-md-6 col-sm-6 col-xs-12">
+                
           <h3>Отделение пластической хирургии</h3>
           <ul class="mhul-ot">
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Дермабразия", "#" %></span></li>
@@ -110,10 +114,10 @@
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Пластика подбородка", "#" %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Пластика ушных раковин", "#" %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Подтяжка лица", "#" %></span></li>
-            <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Ринопластика", "#" %></span></li>
+            <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Ринопластика", rinoplastic_path %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Удаление новообразований кожи", "#" %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Устранение морщин", "#" %></span></li>            
-          </ul>                
+          </ul>                       
       </div>
 
     </div>

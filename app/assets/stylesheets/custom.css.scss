@@ -31,14 +31,18 @@ a.menu:after, .dropdown-toggle:after {
      //padding:5px;
      //margin:5px 5px 0 0;
      //border-radius: 5px;
-     //color: #adadad;
+     color: #adadad;
      &:hover {
       background:#4e5c6e;
       color: white;
-     };
+     };     
     }
    }
   }   
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #4e5c6e;
 }
 
 .navbar-text.navbar-right {
@@ -53,12 +57,12 @@ a.menu:after, .dropdown-toggle:after {
 }
 
 .navbar-inverse {
-  //background-color: #36648B;
+  background-color: #4b3f57;
   border-color: #090909;
 }
 
 .dropdown-menu {
-  //background-color: #36648B;
+  background-color: #4b3f57;
 }
 
 footer {
@@ -175,6 +179,9 @@ h4 {
     line-height: 1.4285em;
     color: #4e5c6e;    
     font-style: italic;
+    span {
+      font-size: 0.9em;
+    }
 }
 p {
     font: normal 1.0em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -219,7 +226,10 @@ p {
     text-align: center;    
     line-height: 1.4285em;
     color: #4e5c6e;    
-    font-style: italic; 
+    font-style: italic;
+    span {
+      font-size: 0.8em;
+    } 
   }
   h3 {
     font: normal 1.35em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
@@ -272,8 +282,9 @@ p {
 
 .intro-marketing {
   width: 100%;  
-  background-image: asset_url("blue_white.png");
-  background-repeat: repeat;
+  //background-image: asset_url("backgrey.png");
+  //background-repeat: repeat;
+  background-color: #d6e3fb;
   padding-top: 10px;
   padding-bottom: 10px;
   h2, h3 {
@@ -286,7 +297,7 @@ p {
 .intro-otdelenie {
   width: 100%;  
   background-image: asset_url("blue.png");
-  background-repeat: repeat;  
+  background-repeat: repeat;
   padding-top: 10px;
   h2, h3 {
     text-align: center;
@@ -300,6 +311,25 @@ p {
       text-decoration: none;
     }
   }
+}
+
+.bpodl {
+  background: #E4EAF4;
+  border-radius:  4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0 4px 4px #7A7A7A;
+  -moz-box-shadow: 0 4px 4px #7A7A7A;
+  -webkit-box-shadow: 0 4px 4px #7A7A7A;
+  padding: 10px;
+}
+
+.bpodl .indent{
+  padding: 30px 40px;
+}
+
+.bpodl .color1 {
+  margin: 17px 0px 17px;
 }
 
 #div_border_bottom {
@@ -328,13 +358,13 @@ h2.cental {
     font-family: "Trebuchet MS", "Helvetica CY", sans-serif;
     font-style: italic;
   }
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 .btn-clear {
   color: #444444;
   background-color: transparent;
-  border: 3px solid #444444;
+  border: 2px solid #444444;
   &:hover {
     background-color: #7EC0EE;
   }
@@ -342,6 +372,7 @@ h2.cental {
   color: #4e5c6e;
   //font-style: italic;
   //font-weight: bold;
+  border-radius: inherit;
 }
 
 span {
@@ -1051,8 +1082,9 @@ HR {
 }
 
 .div_bw {
-  background-image: asset_url("blue_white.png");
-  background-repeat: repeat;
+  //background-image: asset_url("blue_white.png");
+  //background-repeat: repeat;
+  background-color: #d6e3fb;
   padding: 25px;
 }
 
@@ -1289,6 +1321,16 @@ HR {
 
 .imgp {
   text-align: center;
+}
+
+.imgprino {
+  text-align: center;
+  img {
+    margin: 5px;
+  }
+  .img-responsive {
+    margin: 0 auto;
+  }
 }
 
 //второй вариант галереи карусели

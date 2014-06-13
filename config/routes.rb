@@ -13,6 +13,7 @@ Lorcenter::Application.routes.draw do
   match '/doctor/semenov', to: 'static_pages#semenov', via: 'get'
   match '/doctor/gorbonosov', to: 'static_pages#gorbonosov', via: 'get'
   match '/price', to: 'static_pages#price', via: 'get'
+  match '/rinoplastic', to: 'static_pages#rinoplastic', via: 'get'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
