@@ -43,3 +43,4 @@ function resize() {
 window.onload = resize;
 window.onresize = resize;
 //завершение работы с футером
+

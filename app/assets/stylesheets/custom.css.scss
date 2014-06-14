@@ -41,6 +41,11 @@ a.menu:after, .dropdown-toggle:after {
   }   
 }
 
+.navbar-brand {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #4e5c6e;
+}
+
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: #4e5c6e;
 }
@@ -288,7 +293,7 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   h2, h3 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 7px;
     color: #557DB5;
   }
@@ -1349,6 +1354,11 @@ HR {
   .img-responsive {
     margin: 0 auto;
   }
+}
+
+.vertalign {
+  vertical-align: middle;
+  display: table-cell;
 }
 
 //второй вариант галереи карусели
