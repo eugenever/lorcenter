@@ -20,34 +20,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Медицинские услуги<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Диагностика</a></li>
-            <li><a href="#">Коррекция близорукости, астигматизма</a></li>
-            <li><a href="#">Хирургия катаракты</a></li>
-            <li><a href="#">Лечение глаукомы</a></li>
-            <li><a href="#">Лечение кератоконуса</a></li>
-            <li><a href="#">Детский центр "ТриЗор"</a></li>
-            <li><a href="#">Контактная коррекция, ОПТИКА</a></li>
-            <li><a href="#">Аптека</a></li>
+            <li><a href="#">Диагностика</a></li>            
           </ul>
         </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пациентам<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Записаться на прием со скидкой</a></li>
             <li><%= link_to "Услуги и цены", price_path %></li>
-            <li><a href="#">График онлайн консультаций</a></li>
-            <li><a href="#">График выездных приемов врачей</a></li>
-            <li><a href="#">Как вести себя ДО и ПОСЛЕ операции</a></li>
-            <li><a href="#">Специальные предложения и акции</a></li>
-            <li><a href="#">Дополнительные услуги</a></li>
-            <li><a href="#">Статьи врачей</a></li>
-            <li><a href="#">Всё о глазах</a></li>
-            <li><a href="#">Программа поощрения</a></li>
+            <li><%= link_to "Подготовка к операции", preparation_path %></li>
           </ul>
         </li>
 
-        <li><a href="#">Вопрос-Ответ</a></li>
         <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Контакты", contact_path %></li>              
 
       </ul>

@@ -21,4 +21,13 @@ class StaticPagesController < ApplicationController
   def rinoplastic    
   end
 
+  def lifting    
+  end
+
+  def hearaids    
+  end
+
+  def preparation    
+  end
+
 end
