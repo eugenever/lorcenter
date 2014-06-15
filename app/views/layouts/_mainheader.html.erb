@@ -1,5 +1,6 @@
 <div class="jumbotron">
 
+  <!-- <p class="imgprino"><%= image_tag "oto_rino_throat_instrument.png", class: "img-responsive" %></p> -->
   <h1>«ЛОР КЛИНИКА» Краснодар - медицина высоких технологий</h1>
 
   <!-- <div class="container">
@@ -20,7 +21,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-6 col-xs-12">      
         <h2><%= image_tag "64spiegel.png", style: "max-width:50px" %> Отделение оториноларингологии</h2>
-        <h2><%= image_tag "plastic_surg.png", style: "max-width:43px" %> Отделение пластической хирургии</h2>
+        <h2><%= image_tag "plastic_man.png", style: "max-width:43px" %> Отделение пластической хирургии</h2>
       </div>      
       <div class="col-md-6 col-sm-6 col-xs-12">        
         <h2 style="margin-bottom:8px;margin-top:8px;"><%= image_tag "phone.png", style: "max-width:25px" %> <span>8 (861)</span> 268-87-00, 268-78-73</h2>
@@ -31,7 +32,7 @@
     <hr>  
     
     <div class="row">
-      <div class="col-md-4 col-sm-12 col-xs-12">      
+      <div class="col-md-6 col-sm-6 col-xs-12">      
         <h3>Приём ведут:</h3>
         <ul class="mhul">
           <li><span class="glyphicon glyphicon-ok-sign"></span> врачи высшей категории</li>
@@ -39,17 +40,23 @@
           <li><span class="glyphicon glyphicon-ok-sign"></span> доценты</li>
           <li><span class="glyphicon glyphicon-ok-sign"></span> профессор</li>
         </ul>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">      
-        <h3>Функционирует аудиометрический кабинет (3 врача сурдолога)</h3>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
+      </div>      
+      <div class="col-md-6 col-sm-6 col-xs-12">
         <h3>Время приёма:</h3>
         <ul class="mhul">
           <li><span class="glyphicon glyphicon-time"></span> <b>рабочие дни</b> - с 8.00 до 19.00</li>
           <li><span class="glyphicon glyphicon-time"></span> <b>суббота</b> - с 8.00 до 13.00</li>
         </ul>
       </div> 
+    </div>
+
+    <hr>
+
+    <div class="row">    
+      <div class="col-md-12 col-sm-12 col-xs-12">      
+        <h3>Функционирует аудиометрический кабинет (3 врача сурдолога)</h3>
+        <p class="imgprino"><%= image_tag "audilogist.png", class: "img-responsive img-thumbnail" %></p>
+      </div>      
     </div>
 
   </div>
@@ -93,14 +100,16 @@
 
 
 <div class="intro-otdelenie">
-  <div class="container">    
+  <div class="container">   
     <div class="row" id="div_border_bottom">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <h2 class="cental">Приоритетные направления работы клиники</h2>
       </div> 
 
+      
       <div class="col-md-6 col-sm-6 col-xs-12">        
-              
+        
+          <p class="imgprino"><%= image_tag "oto_rino_throat.jpg", class: "img-responsive img-thumbnail" %></p>
           <h3>Отделение оториноларингологии</h3>
           <ul class="mhul-ot">
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Аденоиды", "#" %></span></li>
@@ -120,7 +129,8 @@
         
       </div>       
       <div class="col-md-6 col-sm-6 col-xs-12">
-                
+              
+          <p class="imgprino"><%= image_tag "plastic_surg_ban.jpg", class: "img-responsive img-thumbnail" %></p>
           <h3>Отделение пластической хирургии</h3>
           <ul class="mhul-ot">
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Дермабразия", "#" %></span></li>
@@ -134,7 +144,8 @@
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Ринопластика", rinoplastic_path %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Удаление новообразований кожи", "#" %></span></li>
             <li><span class="glyphicon glyphicon-ok"></span> <span><%= link_to "Устранение морщин", "#" %></span></li>            
-          </ul>                       
+          </ul>
+                             
       </div>
 
     </div>

@@ -205,7 +205,7 @@ p {
   background-image: asset_url("blue.png");
   background-repeat: repeat;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 0px;
@@ -290,8 +290,8 @@ p {
   //background-image: asset_url("backgrey.png");
   //background-repeat: repeat;
   background-color: #d6e3fb;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   h2, h3 {
     text-align: center;
     margin-bottom: 7px;
@@ -303,7 +303,7 @@ p {
   width: 100%;  
   background-image: asset_url("blue.png");
   background-repeat: repeat;
-  padding-top: 10px;
+  padding-top: 20px;
   h2, h3 {
     text-align: center;
     margin-bottom: 7px;
@@ -326,7 +326,8 @@ p {
   box-shadow: 0 4px 4px #7A7A7A;
   -moz-box-shadow: 0 4px 4px #7A7A7A;
   -webkit-box-shadow: 0 4px 4px #7A7A7A;
-  padding: 10px;
+  padding: 20px;
+  margin: 10px 10px 20px 10px;
 }
 
 .bpodl .indent{
