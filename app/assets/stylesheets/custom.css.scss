@@ -250,6 +250,9 @@ p {
     font-style: italic;
     text-decoration: underline;
   }
+  .h3nounder {
+    text-decoration: inherit;
+  }
   p {
     font: normal 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;//Arial, "Times New Roman", Times, serif;
     margin: 0 0 0px;
@@ -266,6 +269,11 @@ p {
     font: normal 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #4e5c6e;    
     font-style: italic;
+    text-align: center;
+    padding: inherit;
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
 
