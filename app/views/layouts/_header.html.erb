@@ -18,15 +18,9 @@
     <div class="collapse navbar-collapse" id="b-menu-1">
       <ul class="nav navbar-nav navbar-right">
 
+        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Главная", root_path %></li>
         <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "О Клинике", about_path %></li>
         <li class="<%= 'active' if current_page?(doctor_path) %>"><%= link_to "Врачи", doctor_path %></li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Медицинские услуги<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Диагностика</a></li>            
-          </ul>
-        </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пациентам<b class="caret"></b></a>

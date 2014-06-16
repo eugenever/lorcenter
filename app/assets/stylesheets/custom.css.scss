@@ -245,7 +245,8 @@ p {
     margin: 0 0 0px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
+    margin-top: 4px;
     padding: 3px 0;
     font-weight: normal;
     text-align: center;    
@@ -302,6 +303,7 @@ p {
   -moz-border-radius: 4px 4px 0 0;
   background-image: asset_url("block_title.png");
   background-repeat: repeat;
+  //background: #E4EAF4;
 }
 
 .clearfix {
